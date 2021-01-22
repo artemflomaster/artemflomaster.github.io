@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<form>
+<h1>Начало</h1>
+<label>One<input type="radio" name="radio" id="a1"></label>
+<label>Two<input id="a2" type="radio" name="radio"></label>
+<label>Three<input id="a3" type="radio" name="radio"></label>
+
+
+<h1>Середина</h1>
+<label>One<input id="b1" type="radio" name="radio2"></label>
+<label>Two<input id="b2" type="radio" name="radio2"></label>
+<label >Three<input id="b3" type="radio" name="radio2"></label>
+
+
+<h1>Конец</h1>
+<label>One<input id="c1" type="radio" name="radio3"></label>
+<label>Two<input id="c2" type="radio" name="radio3"></label>
+<label>Three<input id="c3" type="radio" name="radio3"></label>
+</form>
+
+<button class="" name="button" id="button" onclick="Link()">Посмотреть видео целиком</button>
+<script>
+function Link() {
+var calc = '';
+var videolink = '';
+
+if (document.getElementById("a1").checked == true){
+ calc +='a1';
+} 
+if (document.getElementById("a2").checked == true){
+ calc +='a2';
+} 
+if (document.getElementById("a3").checked == true){
+ calc +='a3';
+} 
+
+if (document.getElementById("b1").checked == true){
+ calc +='b1';
+} 
+if (document.getElementById("b2").checked == true){
+ calc +='b2';
+} 
+if (document.getElementById("b3").checked == true){
+ calc +='b3';
+} 
+
+if (document.getElementById("c1").checked == true){
+ calc +='c1';
+} 
+if (document.getElementById("c2").checked == true){
+ calc +='c2';
+} 
+if (document.getElementById("c3").checked == true){
+ calc +='c3';
+} 
+
+if (calc.length == 6){
+
+//массив видео
+if (calc == 'a1b1c1'){videolink = 'a1b1c1'}
+if (calc == 'a1b1c2'){videolink = 'a1b1c2'}
+if (calc == 'a1b1c3'){videolink = 'a1b1c3'}
+if (calc == 'a1b2c1'){videolink = 'http://ya.ru'}
+if (calc == 'a1b2c2'){videolink = 'http://ya.ru'}
+if (calc == 'a1b2c3'){videolink = 'http://ya.ru'}
+if (calc == 'a1b3c1'){videolink = 'http://ya.ru'}
+if (calc == 'a1b3c2'){videolink = 'http://ya.ru'}
+if (calc == 'a1b3c3'){videolink = 'http://ya.ru'}
+
+if (calc == 'a2b1c1'){videolink = 'a1b1c1'}
+if (calc == 'a2b1c2'){videolink = 'http://ya.ru'}
+if (calc == 'a2b1c3'){videolink = 'http://ya.ru'}
+if (calc == 'a2b2c1'){videolink = 'http://ya.ru'}
+if (calc == 'a2b2c2'){videolink = 'http://ya.ru'}
+if (calc == 'a2b2c3'){videolink = 'http://ya.ru'}
+if (calc == 'a2b3c1'){videolink = 'http://ya.ru'}
+if (calc == 'a2b3c2'){videolink = 'http://ya.ru'}
+if (calc == 'a2b3c3'){videolink = 'http://ya.ru'}
+
+if (calc == 'a3b1c1'){videolink = 'a1b1c1'}
+if (calc == 'a3b1c2'){videolink = 'http://ya.ru'}
+if (calc == 'a3b1c3'){videolink = 'http://ya.ru'}
+if (calc == 'a3b2c1'){videolink = 'http://ya.ru'}
+if (calc == 'a3b2c2'){videolink = 'http://ya.ru'}
+if (calc == 'a3b2c3'){videolink = 'http://ya.ru'}
+if (calc == 'a3b3c1'){videolink = 'http://ya.ru'}
+if (calc == 'a3b3c2'){videolink = 'http://ya.ru'}
+if (calc == 'a3b3c3'){videolink = 'http://ya.ru'}
+
+location.href = videolink;
+} else {
+alert('Некоторые части не выбраны!');
+}
+}
+
+
+
+</script
+
+
+</body>
+</html>
